@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.workmatch.AppTest" time="0.04" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\wagne\WorkMatch\backend\target\test-classes;C:\Users\wagne\WorkMatch\backend\target\classes;C:\Users\wagne\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.8+9\bin"/>
+    <property name="sun.java.command" value="C:\Users\wagne\AppData\Local\Temp\surefire12407050417287966181\surefirebooter-20251014232947975_3.jar C:\Users\wagne\AppData\Local\Temp\surefire12407050417287966181 2025-10-14T23-29-47_712-jvmRun1 surefire-20251014232947975_1tmp surefire_0-20251014232947975_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\wagne\WorkMatch\backend\target\test-classes;C:\Users\wagne\WorkMatch\backend\target\classes;C:\Users\wagne\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\wagne"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.8+9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\wagne\WorkMatch\backend"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\wagne\AppData\Local\Temp\surefire12407050417287966181\surefirebooter-20251014232947975_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+9-LTS"/>
+    <property name="user.name" value="wagne"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.8+9"/>
+    <property name="localRepository" value="C:\Users\wagne\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\wagne\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="C:\Users\wagne\WorkMatch\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.8+9\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21.0.8+9\bin;C:\Program Files\Java\jdk-21.0.8+9;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin;C:\Python313\Scripts\;C:\Python313\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\java\jdk-24_windows-x64_bin\jdk-24.0.1\bin;D:\Aplicativos\dbeaver-ce-25.1.0-win32.win32.x86_64\dbeaver\jre\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;D:\Aplicativos\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21.0.8+9\bin;C:\Users\wagne\anaconda3;C:\Users\wagne\anaconda3\Library\mingw-w64\bin;C:\Users\wagne\anaconda3\Library\usr\bin;C:\Users\wagne\anaconda3\Library\bin;C:\Users\wagne\anaconda3\Scripts;C:\Users\wagne\AppData\Local\Microsoft\WindowsApps;C:\Users\wagne\AppData\Local\GitHubDesktop\bin;C:\Users\wagne\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wagne\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\wagne\AppData\Local\Programs\Windsurf\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.1.2\bin;;C:\Users\wagne\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;C:\Program Files\Docker Toolbox;C:\Program Files\Docker Toolbox;C:\Program Files\Docker Toolbox;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.8+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testApp" classname="com.workmatch.AppTest" time="0.007"/>
+</testsuite>
