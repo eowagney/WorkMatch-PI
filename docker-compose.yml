@@ -1,0 +1,52 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres:15
+    container_name: workmatch-db
+    environment:
+      POSTGRES_DB: workmatch
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - workmatch-net
+
+  backend:
+    build: ./backend
+    container_name: workmatch-backend
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/workmatch
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 1234
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - workmatch-net
+
+  frontend:
+    build: ./frontend
+    container_name: workmatch-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8080
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    networks:
+      - workmatch-net
+
+volumes:
+  db_data:
+
+networks:
+  workmatch-net:
+    driver: bridge
