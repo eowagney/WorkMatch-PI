@@ -1,1 +1,6 @@
+com\workmatch\controller\ClienteController.class
+com\workmatch\repository\ClienteRepository.class
+com\workmatch\model\Cliente.class
+com\workmatch\controller\LoginController.class
+com\workmatch\WorkMatchApplication.class
 com\workmatch\App.class

@@ -1,10 +1,19 @@
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import LoginPage from "./pages/LoginPage.jsx";
+import CadastroPage from "./pages/CadastroPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
+
 
 function App() {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>React funcionando! 🚀</h1>
-      <p>Seu frontend está rodando com sucesso.</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cadastro" element={<CadastroPage />} />
+        <Route path="/home" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 

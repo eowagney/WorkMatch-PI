@@ -1,11 +1,11 @@
 package com.workmatch.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.stereotype.Repository;
 
 import com.workmatch.model.Cliente;
 
+@Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
-
-    Cliente save(@RequestBody Cliente cliente);
+    Cliente findByCpf(String cpf);
 }
