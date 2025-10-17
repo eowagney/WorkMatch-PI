@@ -1,6 +1,10 @@
 package com.workmatch.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,20 +15,24 @@ import com.workmatch.repository.ClienteRepository;
 
 
 @RestController
-@RequestMapping("/clientes")
-@CrossOrigin(origins = "http://localhost:4200") 
+@RequestMapping("/api/clientes")
+@CrossOrigin("*")
 public class ClienteController {
 
-    private final ClienteRepository repository;
-
-    public ClienteController(ClienteRepository repository) {
-        this.repository = repository;
-    }
+    @Autowired
+    private ClienteRepository repository;
 
     @PostMapping
-    public Cliente salvar(@RequestBody Cliente cliente) {
+    public Cliente criarCliente(@RequestBody Cliente cliente) {
         return repository.save(cliente);
     }
+
+    @GetMapping
+    public List<Cliente> listarClientes() {
+    return repository.findAll();
+}
+
+    
 
 
 }
