@@ -1,21 +1,22 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import InicioPage from "./pages/InicioPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import CadastroPage from "./pages/CadastroPage.jsx";
-import HomePage from "./pages/HomePage.jsx";
-import ProfissionalDetalhes from './pages/ProfissionalDetalhes.jsx';  
-
+import ProfissionalDetalhes from "./pages/ProfissionalDetalhes.jsx";
+import HomePage from "./pages/HomePages.jsx";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to="/inicio" replace />} />
+        <Route path="/inicio" element={<InicioPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cadastro" element={<CadastroPage />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/home" element={< HomePage/>} />
         <Route path="/profissional/:id" element={<ProfissionalDetalhes />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

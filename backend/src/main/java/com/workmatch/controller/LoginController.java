@@ -18,7 +18,7 @@ public class LoginController {
         Cliente cliente = clienteRepository.findByCpf(loginRequest.getCpf());
 
         if (cliente != null && cliente.getSenha().equals(loginRequest.getSenha())) {
-            return cliente; // retorna os dados do cliente logado
+            return cliente;
         } else {
             throw new RuntimeException("CPF ou senha inválidos");
         }
